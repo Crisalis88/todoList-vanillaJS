@@ -128,7 +128,7 @@ function createTodo(todoName, taskDescription) {
 
 // handle "done" button from addTodoWindow
 doneButton.addEventListener("click", (event) => {
-    event.preventDefault();
+    //event.preventDefault();
 
     let taskName = taskNameField.value;
     let taskDescription = taskDescriptionField.value;

@@ -114,8 +114,8 @@ function createTodo(todoName, taskDescription) {
     todoElement.classList.add("w-100", "todo");
     todoElement.innerHTML = `
         <div class = "d-flex flex-column">
-            <h4>${todoName}</h4> 
-            <p class = "text-secondary">${taskDescription}</p>
+            <h3>${todoName}</h3> 
+            <h5 class = "text-secondary">${taskDescription}</h5>
         </div> 
         <div><img onclick = "removeTodo(event)" width="26px" height="26px" src="./assets/thrash-bin.png" alt="trash bin"></div>`;
 

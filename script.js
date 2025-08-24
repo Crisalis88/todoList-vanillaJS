@@ -123,7 +123,6 @@ function createTodo(todoName, taskDescription) {
     todosColumn.append(todoElement);
 
     forTgBot.push(todoName);
-    Telegram.WebApp.sendData(forTgBot);
 }
 
 // handle "done" button from addTodoWindow

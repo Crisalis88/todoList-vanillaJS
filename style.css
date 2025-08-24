@@ -7,6 +7,7 @@ body {
   position: relative;
   font-family: "IBM Plex Mono";
   background: #12121f;
+  min-height: 120vh;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -27,7 +28,7 @@ p, h1, h2, h3, h4, h5, h6 {
   transition: all .15s;
   box-sizing: border-box;
   animation-name: navMainAnimation;
-  animation-duration: .5s;
+  animation-duration: .7s;
   box-sizing: border-box;
 }
 
@@ -39,8 +40,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper nav .square img {
-  width: 85%;
-  height: 85%;
+  width: 80%;
+  height: 80%;
 }
 
 .wrapper nav .square:active {
@@ -48,7 +49,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper main {
-  min-height: 50vh;
+  min-height: 40vh;
 }
 
 .wrapper main .todo {

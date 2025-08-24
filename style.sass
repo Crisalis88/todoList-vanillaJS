@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap')
+
+body
+    font-family: "IBM Plex Mono"
+    background: #12121f
+
+p, h1, h2, h3, h4, h5, h6
+    margin: 0
+
+.wrapper
+    margin-inline: 8%
+    border-radius: 0.5em
+    > *
+        background: #070014
+        border-radius: 0.25em
+        padding: 0.5rem
+        padding-inline: 0.75rem
+        transition: all .15s
+        box-sizing: border-box
+        animation-name: navMainAnimation
+        animation-duration: .5s
+        box-sizing: border-box
+
+    nav
+        .square
+            height: 2.6rem
+            width: 2.5rem
+            border: solid 1px white
+            transition: transform 0.1s
+            img
+                width: 85%
+                height: 85%
+        .square:active
+            transform: scale(1.07)
+    main
+        min-height: 50vh
+        .todo
+            padding: 0.5rem
+            padding-inline: .75rem
+            border-radius: 0.25em
+            display: flex
+            justify-content: space-between
+            align-items: center
+            line-height: 80%
+            transition: all 0.25s
+            box-sizing: border-box
+
+.addTodoWindow
+    display: none
+    postition: absolute
+    top: 35%
+    left: 27%
+    z-index: 1000
+    width: 72%
+    background: rgba(100, 110, 120, .2)
+    backdrop-filter: blur(2px)
+    .text-secondary
+        line-height: 140%
+
+@media (min-width:650px)
+    .wrapper
+        margin-inline: 20%
+    .addTodoWindow
+        width: 20%
+
+@keyframes navMainAnimation
+    0%
+        opacity: 0
+        transform: translate(400px, 10px)
+
+    100%
+        opacity: 1
+        transform: none

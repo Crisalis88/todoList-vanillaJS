@@ -92,9 +92,10 @@ const todosColumn = document.getElementById("todosColumn");
 
 function removeTodo(event) {
     //reaching grandparent of img that is todo div and removing this todo
-    event.target.parentElement.parentElement.remove()
+    event.target.parentElement.parentElement.remove();
 }
 
+let forTgBot = [];
 function createTodo(todoName, taskDescription) {
     //creating new todo
     const todoElement = document.createElement('div');
@@ -120,6 +121,9 @@ function createTodo(todoName, taskDescription) {
 
     //adding this new todo to todos column
     todosColumn.append(todoElement);
+
+    forTgBot.push(todoName);
+    Telegram.WebApp.sendData(forTgBot);
 }
 
 // handle "done" button from addTodoWindow
